@@ -65,10 +65,12 @@ document
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
-      card.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(110,231,255,0.12), rgba(17,24,45,0.78) 45%)`;
+      card.style.setProperty("--x", `${x}px`);
+      card.style.setProperty("--y", `${y}px`);
+      card.style.background = "var(--card-hover)";
     });
 
     card.addEventListener("mouseleave", () => {
-      card.style.background = "rgba(17, 24, 45, 0.7)";
+      card.style.background = "var(--card-rest)";
     });
   });

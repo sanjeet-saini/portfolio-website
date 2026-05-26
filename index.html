@@ -30,7 +30,14 @@
             <span>Sanjeet Saini</span>
           </div>
 
-          <button class="menu-btn" id="menuBtn">☰</button>
+          <button
+            class="menu-btn"
+            id="menuBtn"
+            type="button"
+            aria-label="Open menu"
+          >
+            Menu
+          </button>
 
           <ul class="nav-links" id="navLinks">
             <li><a href="#home" class="active">Home</a></li>
@@ -53,7 +60,7 @@
               and responsive web experiences.
             </h1>
             <p>
-              I’m Sanjeet Saini, a motivated frontend developer from
+              I'm Sanjeet Saini, a motivated frontend developer from
               Bahadurgarh, Haryana. I create clean, responsive, interactive
               websites using HTML, CSS, JavaScript, React.js and modern UI
               principles. My focus is to turn ideas into smooth and professional
@@ -62,24 +69,19 @@
 
             <div class="hero-actions">
               <a href="#projects" class="btn btn-primary">View Projects</a>
-             
-              
             </div>
 
             <div class="hero-meta">
-              <div class="hero-chip">📍 Bahadurgarh, Haryana</div>
-              <div class="hero-chip">💻 HTML • CSS • JavaScript • React</div>
-              <div class="hero-chip">🚀 Open for Internship</div>
+              <div class="hero-chip">Location: Bahadurgarh, Haryana</div>
+              <div class="hero-chip">HTML | CSS | JavaScript | React</div>
+              <div class="hero-chip">Open for Internship</div>
             </div>
           </div>
 
           <div class="hero-card reveal">
             <div class="profile-ring">
               <div class="profile-core">
-                <img
-                  src="profilepic.jpeg"
-                  alt=""
-                />
+                <img src="profilepic.jpeg" alt="Sanjeet Saini profile photo" />
                 <div>
                   <h2 class="card-title">Frontend Developer</h2>
                   <p class="card-subtitle">
@@ -90,23 +92,25 @@
                 </div>
               </div>
             </div>
-            <span class="eyebrow"
-              >⚡ Frontend Developer • BCA Final Semester</span
-            >
+            <span class="eyebrow">Frontend Developer | BCA Final Semester</span>
             <div class="mini-grid">
               <div class="mini-card">
+                <span class="mini-icon" aria-hidden="true">@</span>
                 <strong>Email</strong>
                 <span>sanjeetsaini91@gmail.com</span>
               </div>
               <div class="mini-card">
+                <span class="mini-icon" aria-hidden="true">☎</span>
                 <strong>Phone</strong>
                 <span>+91-9306949154</span>
               </div>
               <div class="mini-card">
+                <span class="mini-icon" aria-hidden="true">{ }</span>
                 <strong>GitHub</strong>
                 <span>github.com/sanjeet-saini</span>
               </div>
               <div class="mini-card">
+                <span class="mini-icon" aria-hidden="true">◎</span>
                 <strong>Goal</strong>
                 <span>Frontend Developer Internship</span>
               </div>
@@ -132,7 +136,7 @@
 
           <div class="stats-grid">
             <div class="stat reveal">
-              <h3>05+</h3>
+              <h3>15+</h3>
               <p>
                 Frontend projects built with real UI interaction and JavaScript
                 functionality.
@@ -286,107 +290,344 @@
           </div>
 
           <div class="projects-grid">
+            <!-- DevTracker AI -->
             <article class="project-card reveal">
-              <div class="project-top">
-                <div class="project-icon">🎨</div>
-                <div class="project-number">01</div>
+              <div class="project-image">
+                <img
+                  src="projectimg/devtracker.png"
+                  alt="DevTracker AI project preview"
+                />
               </div>
+
+              <h3>DevTracker AI</h3>
+
+              <p>
+                AI-powered developer productivity platform that helps track
+                coding goals, manage projects, monitor progress, and organize
+                daily development tasks.
+              </p>
+
+              <ul>
+                <li>AI-based productivity and task suggestions</li>
+                <li>Project tracking dashboard with analytics</li>
+                <li>Modern responsive UI with smooth animations</li>
+              </ul>
+
+              <button class="project-demo-btn" type="button">
+                Live Demo availavle soon
+              </button>
+            </article>
+
+            <!-- Smart Portfolio Builder -->
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="projectimg/smart portfolio.png"
+                  alt="Smart Portfolio Builder preview"
+                />
+              </div>
+
+              <h3>Smart Portfolio Builder</h3>
+
+              <p>
+                Interactive portfolio generator that allows users to create
+                modern portfolio websites with live preview and customizable
+                sections.
+              </p>
+
+              <ul>
+                <li>Drag and drop portfolio customization</li>
+                <li>Live real-time portfolio preview</li>
+                <li>Multiple modern themes and layouts</li>
+              </ul>
+
+              <button class="project-demo-btn" type="button">
+                Live Demo availavle soon
+              </button>
+            </article>
+
+            <!-- Music Player -->
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="projectimg/mood.png"
+                  alt="Music Player project preview"
+                />
+              </div>
+
+              <h3>Moodify - Music Player</h3>
+
+              <p>
+                Modern music player application with interactive controls,
+                smooth UI animations, and responsive design for all devices.
+              </p>
+
+              <ul>
+                <li>Play, pause, next and previous controls</li>
+                <li>Animated progress bar and dynamic UI</li>
+                <li>Responsive design for mobile and desktop</li>
+              </ul>
+              <a href="https://sanjeet-saini.github.io/moodify/">
+                <button class="project-demo-btn" type="button">
+                  Live Demo
+                </button>
+              </a>
+            </article>
+
+            <!-- Wall Color Visualizer -->
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="projectimg/wall color project.png"
+                  alt="Wall Color Visualizer preview"
+                />
+              </div>
+
               <h3>Wall Color Visualizer</h3>
+
               <p>
-                Interactive wall color preview tool with dynamic color selection
-                and real-time UI updates.
+                Interactive wall color preview tool with real-time color
+                customization and smooth visual transitions.
               </p>
+
               <ul>
-                <li>Built with HTML, CSS and JavaScript</li>
-                <li>Responsive for mobile and desktop</li>
-                <li>Clean visual interaction and instant feedback</li>
+                <li>Dynamic wall color selection system</li>
+                <li>Instant real-time visual updates</li>
+                <li>Clean responsive user interface</li>
               </ul>
+              <a
+                href="https://sanjeet-saini.github.io/wall-color-visualization/"
+              >
+                <button class="project-demo-btn" type="button">
+                  Live Demo
+                </button>
+              </a>
             </article>
 
+            <!-- Image Editor -->
             <article class="project-card reveal">
-              <div class="project-top">
-                <div class="project-icon">🎵</div>
-                <div class="project-number">02</div>
+              <div class="project-image">
+                <img
+                  src="projectimg/photo editor app.png"
+                  alt="Image Editor project preview"
+                />
               </div>
-              <h3>Music Player Web App</h3>
-              <p>
-                Interactive music player focused on dynamic controls, playlist
-                handling and a modern interface.
-              </p>
-              <ul>
-                <li>JavaScript-powered controls</li>
-                <li>DOM manipulation for player behavior</li>
-                <li>Responsive UI layout</li>
-              </ul>
-            </article>
 
-            <article class="project-card reveal">
-              <div class="project-top">
-                <div class="project-icon">🖼️</div>
-                <div class="project-number">03</div>
-              </div>
               <h3>Image Editor</h3>
+
               <p>
-                Browser-based editor using Canvas API with filters, brightness
-                controls and real-time preview.
+                Feature-rich image editing application with filters,
+                adjustments, cropping tools, and real-time preview
+                functionality.
               </p>
+
               <ul>
-                <li>Canvas-based editing logic</li>
-                <li>Real-time visual updates</li>
-                <li>JavaScript-driven controls</li>
+                <li>Brightness, contrast and filter controls</li>
+                <li>Crop, rotate and resize functionality</li>
+                <li>Instant image preview and download support</li>
               </ul>
+              <a href="https://sanjeet-saini.github.io/image-editor-app/">
+                <button class="project-demo-btn" type="button">
+                  Live Demo
+                </button>
+              </a>
             </article>
 
+            <!-- Drawing App -->
             <article class="project-card reveal">
-              <div class="project-top">
-                <div class="project-icon">🐍</div>
-                <div class="project-number">04</div>
+              <div class="project-image">
+                <img
+                  src="projectimg/drawingapp.png"
+                  alt="Drawing App project preview"
+                />
               </div>
+
+              <h3>Drawing App</h3>
+
+              <p>
+                Creative browser-based drawing application with multiple brush
+                tools, color selection, and smooth canvas interactions.
+              </p>
+
+              <ul>
+                <li>Canvas drawing with custom brush sizes</li>
+                <li>Color picker and erase functionality</li>
+                <li>Save and clear drawing features</li>
+              </ul>
+              <a href="https://sanjeet-saini.github.io/drawing_app/">
+                <button class="project-demo-btn" type="button">
+                  Live Demo
+                </button>
+              </a>
+            </article>
+
+            <!-- Snake Game -->
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="projectimg/snake game.png"
+                  alt="Snake Game project preview"
+                />
+              </div>
+
               <h3>Snake Game</h3>
+
               <p>
-                Classic snake game with keyboard controls, collision detection
-                and score tracking.
+                Modern snake game with smooth movement mechanics, score
+                tracking, responsive gameplay, and realistic visual styling.
               </p>
+
               <ul>
-                <li>Game loop and movement logic</li>
-                <li>Collision handling</li>
-                <li>Interactive browser gameplay</li>
+                <li>Real-time keyboard controls and scoring</li>
+                <li>Smooth game animations and effects</li>
+                <li>Responsive gameplay for different screen sizes</li>
               </ul>
+              <a href="https://sanjeet-saini.github.io/snake-game/">
+                <button class="project-demo-btn" type="button">
+                  Live Demo
+                </button>
+              </a>
             </article>
 
+            <!-- Code Editor -->
             <article class="project-card reveal">
-              <div class="project-top">
-                <div class="project-icon">💻</div>
-                <div class="project-number">05</div>
+              <div class="project-image">
+                <img
+                  src="projectimg/code editor.png"
+                  alt="Code Editor project preview"
+                />
               </div>
-              <h3>Online Code Editor</h3>
+
+              <h3>Code Editor</h3>
+
               <p>
-                Live HTML, CSS and JavaScript code editor with iframe-based
-                preview rendering.
+                Browser-based live code editor for writing and previewing HTML,
+                CSS, and JavaScript in real time.
               </p>
+
               <ul>
-                <li>Real-time output rendering</li>
-                <li>Structured UI with editor sections</li>
-                <li>Useful for frontend practice and testing</li>
+                <li>Live preview while coding</li>
+                <li>Separate HTML, CSS and JavaScript panels</li>
+                <li>Clean editor interface with instant output</li>
               </ul>
+              <a href=" https://sanjeet-saini.github.io/code-editor-js/">
+                <button class="project-demo-btn" type="button">
+                  Live Demo
+                </button>
+              </a>
             </article>
-<!-- 
+
+            <!-- Rotating Drink Animation -->
             <article class="project-card reveal">
-              <div class="project-top">
-                <div class="project-icon">🚀</div>
-                <div class="project-number">06</div>
+              <div class="project-image">
+                <img
+                  src="projectimg/coca cola.png"
+                  alt="Rotating Drink Animation preview"
+                />
               </div>
-              <h3>Next Goal</h3>
+
+              <h3>Drink showcase Animation</h3>
+
               <p>
-                Currently preparing for professional frontend opportunities and
-                building stronger full projects.
+                Creative CSS animation project featuring a smooth rotating drink
+                showcase with cinematic visual effects.
               </p>
+
               <ul>
-                <li>Portfolio refinement</li>
-                <li>Interview preparation</li>
-                <li>Internship-ready personal branding</li>
+                <li>Pure CSS keyframe animation effects</li>
+                <li>Modern 3D rotation and transitions</li>
+                <li>Interactive and visually engaging design</li>
               </ul>
-            </article> -->
+              <a href="https://sanjeet-saini.github.io/rotating-drink/">
+                <button class="project-demo-btn" type="button">
+                  Live Demo
+                </button>
+              </a>
+            </article>
+
+            <!-- CSS Hover Effects -->
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="projectimg/css hover.png"
+                  alt="CSS Hover Effects preview"
+                />
+              </div>
+
+              <h3>CSS Hover Effects</h3>
+
+              <p>
+                Collection of modern hover interaction effects built using
+                advanced CSS transitions and creative animation techniques.
+              </p>
+
+              <ul>
+                <li>Interactive hover-based UI animations</li>
+                <li>Smooth transitions and transform effects</li>
+                <li>Modern responsive visual design</li>
+              </ul>
+              <a href="https://sanjeet-saini.github.io/css-hover/">
+                <button class="project-demo-btn" type="button">
+                  Live Demo
+                </button>
+              </a>
+            </article>
+
+            <!-- CSS Scroll Animation -->
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="projectimg/css scroll.png"
+                  alt="CSS Scroll Animation preview"
+                />
+              </div>
+
+              <h3>CSS Scroll Animation</h3>
+
+              <p>
+                Smooth scroll-triggered animation project that creates engaging
+                user experiences with modern visual motion effects.
+              </p>
+
+              <ul>
+                <li>Scroll-based reveal animations</li>
+                <li>Modern UI motion and transitions</li>
+                <li>Responsive and performance optimized</li>
+              </ul>
+              <a href="https://sanjeet-saini.github.io/scroll-animation/">
+                <button class="project-demo-btn" type="button">
+                  Live Demo
+                </button>
+              </a>
+            </article>
+
+            <!-- CSS Keyframe AutoRun -->
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="projectimg/css 3d animation.png"
+                  alt="CSS Keyframe AutoRun preview"
+                />
+              </div>
+
+              <h3>CSS 3d Rotation animation</h3>
+
+              <p>
+                Cinematic auto-running animation built using advanced CSS
+                keyframes, smooth motion timing, and modern visual effects.
+              </p>
+
+              <ul>
+                <li>Pure CSS automated animation system</li>
+                <li>Advanced keyframe timing techniques</li>
+                <li>Modern cinematic visual presentation</li>
+              </ul>
+              <a href="https://sanjeet-saini.github.io/css-only/">
+                <button class="project-demo-btn" type="button">
+                  Live Demo
+                </button>
+              </a>
+            </article>
           </div>
         </div>
       </section>
