@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-// Adds the "visible" class once the element scrolls into view
-// (replaces the IntersectionObserver code from script.js).
+// Adds the "visible" class once the element scrolls into view.
 export function useReveal(threshold = 0.14) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
