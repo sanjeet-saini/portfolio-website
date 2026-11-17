@@ -70,6 +70,9 @@ export default function Contact() {
                 <small>Location</small>
                 <span>{profile.location}</span>
               </div>
+              <a className="project-demo-btn resume-btn" href={profile.resume} download>
+                Download Resume (PDF) ↓
+              </a>
             </div>
           </Reveal>
         </div>

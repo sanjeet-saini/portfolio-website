@@ -1478,3 +1478,93 @@ header.scrolled {
   background: rgba(219, 194, 123, 0.08);
   border: 1px solid rgba(219, 194, 123, 0.16);
 }
+
+/* Shown on project cards that don't have a screenshot yet */
+.project-placeholder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(54, 214, 176, 0.18), transparent 60%),
+    radial-gradient(circle at 75% 70%, rgba(219, 194, 123, 0.14), transparent 55%);
+}
+
+.project-placeholder span {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: rgba(248, 244, 237, 0.55);
+}
+
+/* Marks projects that were built with AI tools */
+.project-image {
+  position: relative;
+}
+
+.ai-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #07100e;
+  background: linear-gradient(135deg, #b9a7ff, #7dd3fc);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* "AI-Assisted Experiments" block under the main projects */
+.sub-head {
+  margin: 48px 0 20px;
+  max-width: 680px;
+}
+
+.sub-head h3 {
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+}
+
+.sub-head p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.projects-grid.ai-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.more-projects {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.more-projects a {
+  display: inline-flex;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 1px solid rgba(54, 214, 176, 0.35);
+  color: var(--brand);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.more-projects a:hover {
+  background: rgba(54, 214, 176, 0.1);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .projects-grid.ai-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-list .resume-btn {
+  justify-self: start;
+  margin-top: 4px;
+}

@@ -13,6 +13,8 @@ export const profile = {
   linkedinUrl: "https://www.linkedin.com/in/sanjeet-saini-880b1827a",
   location: "Bahadurgarh, Haryana",
   photo: "profilepic.jpeg",
+  // Rebuild with `npm run resume` after editing resume/resume.html
+  resume: "Sanjeet-Saini-Resume.pdf",
 };
 
 export const navItems = [
@@ -39,7 +41,7 @@ export const miniCards = [
 
 export const stats = [
   { label: "Live", text: "Every project is deployed and working in the browser, not just code in a repository." },
-  { label: "JavaScript", text: "Core app logic written in plain JavaScript, from canvas editing to live code preview." },
+  { label: "JavaScript", text: "Core app logic written in plain JavaScript, from canvas image editing to a mood-based music engine." },
   { label: "React", text: "Component-based UI with hooks and a modern Vite workflow, like this portfolio." },
   { label: "Responsive", text: "Layouts designed to work across mobile, tablet and desktop screens." },
 ];
@@ -72,18 +74,31 @@ export const skills = [
   {
     icon: "🧰",
     title: "Tools & Workflow",
-    text: "Version control, package management and debugging tools I use in every project.",
-    chips: ["Git", "GitHub", "VS Code", "npm", "Chrome DevTools"],
+    text: "Version control, package management and debugging tools I use in every project, plus AI tools to prototype ideas faster.",
+    chips: ["Git", "GitHub", "VS Code", "npm", "Chrome DevTools", "AI-assisted development"],
   },
   {
     icon: "🖥️",
-    title: "Currently Learning: Backend",
-    text: "Expanding into server-side JavaScript — building REST APIs with Node.js and Express.js and storing data with MongoDB as hands-on practice.",
-    chips: ["Node.js", "Express.js", "MongoDB", "REST APIs"],
+    title: "Backend (Growing)",
+    text: "Built the REST API and SQLite database for ClientFlow CRM with Node.js and Express, and currently learning MongoDB.",
+    chips: ["Node.js", "Express.js", "REST APIs", "SQLite", "MongoDB (learning)"],
   },
 ];
 
+// `image` is optional: cards without one show a placeholder until a screenshot is added.
 export const projects = [
+  {
+    title: "ClientFlow CRM – Full Stack",
+    image: "projectimg/clientflow.png",
+    stack: ["React", "Node.js", "Express", "SQLite", "React Router"],
+    text: "A full-stack CRM for managing customers, a sales pipeline and follow-up tasks, with a REST API, a SQLite database and automated tests.",
+    points: [
+      "Customers, leads and tasks with full CRUD, search, filters and sorting",
+      "Express REST API with server-side validation and SQLite (cascade deletes)",
+      "Live dashboard totals, 5-stage pipeline and API tests with node:test",
+    ],
+    link: "https://sanjeet-saini.github.io/clientflow-crm-fullstack/",
+  },
   {
     title: "DevTracker",
     image: "projectimg/tracker.png",
@@ -121,18 +136,6 @@ export const projects = [
     link: "https://sanjeet-saini.github.io/moodify/",
   },
   {
-    title: "Wall Color Visualizer",
-    image: "projectimg/wall color project.png",
-    stack: ["JavaScript", "Fetch API", "JSON", "CSS"],
-    text: "Preview paint colours on real room photos — pick a room, choose a colour and click any wall to see it painted instantly.",
-    points: [
-      "4 room types: living room, bedroom, kitchen and kids room",
-      "Colour palette loaded from JSON with auto-generated shades",
-      "Paint individual walls, with undo and reset",
-    ],
-    link: "https://sanjeet-saini.github.io/wall-color-visualization/",
-  },
-  {
     title: "Image Editor",
     image: "projectimg/photo editor app.png",
     stack: ["JavaScript", "Canvas API", "CSS Filters"],
@@ -145,28 +148,46 @@ export const projects = [
     link: "https://sanjeet-saini.github.io/image-editor-app/",
   },
   {
-    title: "Drawing App",
-    image: "projectimg/drawingapp.png",
-    stack: ["JavaScript", "Canvas API", "Pointer Events"],
-    text: "A canvas drawing app with freehand tools and shapes that works with mouse, touch and stylus.",
+    title: "Wall Color Visualizer",
+    image: "projectimg/wall color project.png",
+    stack: ["JavaScript", "Fetch API", "JSON", "CSS"],
+    text: "Preview paint colours on real room photos — pick a room, choose a colour and click any wall to see it painted instantly.",
     points: [
-      "Pencil, brush and eraser with adjustable size and colour picker",
-      "Rectangle, circle, triangle, square and hexagon with optional fill",
-      "Clear the canvas or save the drawing as an image",
+      "4 room types: living room, bedroom, kitchen and kids room",
+      "Colour palette loaded from JSON with auto-generated shades",
+      "Paint individual walls, with undo and reset",
     ],
-    link: "https://sanjeet-saini.github.io/drawing_app/",
+    link: "https://sanjeet-saini.github.io/wall-color-visualization/",
+  },
+];
+
+// Built with AI tools under my direction; shown in their own section.
+export const aiProjects = [
+  {
+    title: "Ember & Oak Restaurant",
+    aiAssisted: true,
+    image: "projectimg/ember.png",
+    stack: ["JavaScript", "Canvas API", "CSS", "AI tools"],
+    text: "A restaurant landing page where a burger builds itself as you scroll. I created the burger video, converted it into image frames, then used AI to build the scroll animation and the page.",
+    points: [
+      "My role: video creation, frame conversion and directing the AI with prompts",
+      "Scroll-driven canvas animation of 180+ frames with a loading progress bar",
+      "Menu with 5 category tabs and an auto-playing reviews carousel",
+    ],
+    link: "https://sanjeet-saini.github.io/ember-and-oak-restaurant/",
   },
   {
-    title: "Code Editor",
-    image: "projectimg/code editor.png",
-    stack: ["JavaScript", "iframe", "localStorage"],
-    text: "A browser-based playground for writing HTML, CSS and JavaScript and seeing the result live, like a mini CodePen.",
+    title: "AUREL – Animated Landing Page",
+    aiAssisted: true,
+    image: "projectimg/aurel.png",
+    stack: ["JavaScript", "GSAP", "SVG", "AI tools"],
+    text: "A creative studio landing page built completely with AI from my prompts and design direction, focused on motion and interaction.",
     points: [
-      "Live preview in a sandboxed iframe as you type",
-      "Separate HTML, CSS and JavaScript panels with copy buttons",
-      "Code auto-saved in the browser so it survives a refresh",
+      "Liquid SVG mask that follows the mouse and reveals a second image",
+      "Click anywhere on the hero to change the images",
+      "GSAP headline slider and scroll-triggered animations",
     ],
-    link: "https://sanjeet-saini.github.io/code-editor-js/",
+    link: "https://sanjeet-saini.github.io/animated-landing-page/",
   },
 ];
 
@@ -191,15 +212,15 @@ export const timeline = [
     title: "Project-Based Learning",
     text: "I learn new tools by shipping real projects with them",
     points: [
-      "React + Tailwind CSS + Chart.js in DevTracker; React 19 in Portfolio Builder",
-      "GSAP animations and the Canvas API in Moodify",
+      "React + Node.js + Express + SQLite in ClientFlow CRM; React + Tailwind CSS in DevTracker",
+      "GSAP and the Canvas API in Moodify; AI-assisted builds for AUREL and Ember & Oak",
     ],
   },
   {
     meta: "Languages",
     title: "Communication",
-    text: "Hindi (Native), English (Professional working proficiency)",
-    points: ["Comfortable discussing technical work and collaborating in a team"],
+    text: "Hindi (Native), English (Intermediate)",
+    points: ["Actively improving my English communication every day"],
   },
 ];
 

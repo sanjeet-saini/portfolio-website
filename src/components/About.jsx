@@ -9,8 +9,8 @@ export default function About() {
         <SectionHead tag="About Me" title="Professional profile with creative energy.">
           I am a BCA student who learns by building. I enjoy turning ideas into
           clean, responsive interfaces and writing the JavaScript logic that
-          makes them work — from productivity dashboards to image and code
-          editors that run entirely in the browser.
+          makes them work — from a full-stack CRM and productivity dashboards
+          to an image editor and a mood-based music player.
         </SectionHead>
 
         <div className="stats-grid">

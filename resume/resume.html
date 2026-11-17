@@ -1,0 +1,166 @@
+<!doctype html>
+<!--
+  ATS-friendly resume source.
+  Single column, real text, standard section headings, no tables, icons or images.
+  Build the PDF with:  npm run resume
+  Output: public/Sanjeet-Saini-Resume.pdf
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sanjeet Saini - Frontend Developer Resume</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 11mm 14mm;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 9.8pt;
+        line-height: 1.3;
+        color: #111;
+      }
+      a {
+        color: #111;
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 20pt;
+        letter-spacing: 0.5px;
+      }
+      .title {
+        font-size: 11pt;
+        font-weight: bold;
+        margin-top: 2px;
+      }
+      .contact {
+        margin-top: 3px;
+        font-size: 9pt;
+      }
+      h2 {
+        font-size: 10.5pt;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        border-bottom: 1px solid #111;
+        padding-bottom: 2px;
+        margin: 8px 0 4px;
+      }
+      p {
+        margin-bottom: 3px;
+      }
+      ul {
+        margin: 2px 0 0 16px;
+      }
+      li {
+        margin-bottom: 2px;
+      }
+      .item {
+        margin-bottom: 5px;
+      }
+      .item-head {
+        font-weight: bold;
+      }
+      .item-sub {
+        font-size: 9.5pt;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SANJEET SAINI</h1>
+    <p class="title">Frontend Developer | React.js | JavaScript</p>
+    <p class="contact">
+      Bahadurgarh, Haryana, India | +91-9306949154 |
+      <a href="mailto:sanjeetsaini91@gmail.com">sanjeetsaini91@gmail.com</a>
+    </p>
+    <p class="contact">
+      LinkedIn: <a href="https://www.linkedin.com/in/sanjeet-saini-880b1827a">linkedin.com/in/sanjeet-saini-880b1827a</a> |
+      GitHub: <a href="https://github.com/sanjeet-saini">github.com/sanjeet-saini</a>
+    </p>
+    <p class="contact">
+      Portfolio: <a href="https://sanjeet-saini.github.io/portfolio-website/">sanjeet-saini.github.io/portfolio-website</a>
+    </p>
+
+    <h2>Summary</h2>
+    <p>
+      Frontend Developer and BCA final-semester student who builds responsive, interactive web
+      applications with React.js, JavaScript, HTML and CSS. Built and deployed multiple live projects,
+      including a full-stack CRM with a Node.js/Express REST API, SQLite database and automated tests.
+      Looking for a Frontend Developer internship or entry-level role.
+    </p>
+
+    <h2>Technical Skills</h2>
+    <p><strong>Programming:</strong> JavaScript (ES6+), HTML5, CSS3</p>
+    <p><strong>Frontend:</strong> React.js, React Hooks, React Router, Tailwind CSS, Bootstrap, GSAP, Chart.js, Responsive Design</p>
+    <p><strong>Backend:</strong> Node.js, Express.js, REST APIs, SQLite, MongoDB (learning)</p>
+    <p><strong>Browser APIs:</strong> DOM, Fetch API, Canvas API, Web Audio API, Local Storage, Drag and Drop API</p>
+    <p><strong>Tools:</strong> Git, GitHub, VS Code, Vite, npm, Chrome DevTools, GitHub Pages, AI-assisted development</p>
+
+    <h2>Projects</h2>
+
+    <div class="item">
+      <p class="item-head">ClientFlow CRM (Full Stack) | React.js, Node.js, Express.js, SQLite</p>
+      <p class="item-sub">Live: sanjeet-saini.github.io/clientflow-crm-fullstack | Code: github.com/sanjeet-saini/clientflow-crm-fullstack</p>
+      <ul>
+        <li>Built a CRM to manage customers, sales leads and follow-up tasks with full CRUD, search, filters and sorting.</li>
+        <li>Developed a REST API with Express.js and server-side validation, storing data in SQLite with cascade deletes.</li>
+        <li>Wrote automated API and data tests using the Node.js test runner; dashboard totals are calculated from live data.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <p class="item-head">DevTracker - Developer Productivity Dashboard | React.js, Tailwind CSS, Chart.js</p>
+      <p class="item-sub">Live: sanjeet-saini.github.io/tracker | Code: github.com/sanjeet-saini/tracker</p>
+      <ul>
+        <li>Built a dashboard with a daily coding timer, weekly analytics chart, task planner and skill tracker.</li>
+        <li>Integrated the GitHub REST API to show a user's latest repositories, with clear error handling.</li>
+        <li>Added rule-based productivity tips, coding streaks, dark/light mode and Local Storage persistence.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <p class="item-head">Smart Portfolio Builder | React.js, Vite, Drag and Drop API</p>
+      <p class="item-sub">Live: sanjeet-saini.github.io/portfolio_builder- | Code: github.com/sanjeet-saini/portfolio_builder-</p>
+      <ul>
+        <li>Built a no-code portfolio generator with a live preview that updates as the user fills in the form.</li>
+        <li>Implemented drag-and-drop reordering, 3 themes, 4 templates, mobile preview, HTML export and print-to-PDF.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <p class="item-head">Moodify - Mood-Based Music Player | JavaScript, GSAP, Canvas API, Web Audio API</p>
+      <p class="item-sub">Live: sanjeet-saini.github.io/moodify | Code: github.com/sanjeet-saini/moodify</p>
+      <ul>
+        <li>Built a mood engine that scores typed or spoken text and builds a matching playlist.</li>
+        <li>Added an audio visualizer, GSAP animations, search, favourites and keyboard shortcuts.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <p class="item-head">Image Editor | JavaScript, Canvas API</p>
+      <p class="item-sub">Live: sanjeet-saini.github.io/image-editor-app | Code: github.com/sanjeet-saini/image-editor-app</p>
+      <ul>
+        <li>Built a browser photo editor with live filters, rotate and flip, and download of the edited image using Canvas.</li>
+      </ul>
+    </div>
+
+    <h2>Education</h2>
+    <p><strong>Bachelor of Computer Applications (BCA)</strong> - Indira Gandhi National Open University (IGNOU) | Final Semester</p>
+    <p><strong>Senior Secondary (Class XII), CBSE</strong> - Deep Chand Public School | 2022</p>
+    <p><strong>Secondary (Class X), CBSE</strong> - Nav Jyoti High School | 2020</p>
+
+    <h2>Strengths</h2>
+    <ul>
+      <li>Logical thinking and problem solving; clean, structured coding practices</li>
+      <li>Fast learner with consistent self-driven project work; strong interest in modern, animated UI design</li>
+    </ul>
+
+    <h2>Languages</h2>
+    <p>Hindi (Native), English (Intermediate, actively improving)</p>
+
+  </body>
+</html>
