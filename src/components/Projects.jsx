@@ -4,8 +4,9 @@ import { aiProjects, profile, projects } from "../data/portfolio";
 
 function ProjectCard({ project, delay }) {
   return (
-    <Reveal as="article" className="project-card" delay={delay}>
+    <Reveal as="article" className={`project-card${project.featured ? " featured" : ""}`} delay={delay}>
       <div className="project-image">
+        {project.featured && <span className="featured-badge">★ Featured</span>}
         {project.aiAssisted && (
           <span className="ai-badge" title="Built with AI tools under my direction">
             🤖 AI-assisted
@@ -31,9 +32,16 @@ function ProjectCard({ project, delay }) {
           <li key={point}>{point}</li>
         ))}
       </ul>
-      <a className="project-demo-btn" href={project.link} target="_blank" rel="noreferrer">
-        View Live Project ↗
-      </a>
+      <div className="project-actions">
+        <a className="project-demo-btn" href={project.link} target="_blank" rel="noreferrer">
+          View Live ↗
+        </a>
+        {project.code && (
+          <a className="project-code-btn" href={project.code} target="_blank" rel="noreferrer">
+            Code ↗
+          </a>
+        )}
+      </div>
     </Reveal>
   );
 }

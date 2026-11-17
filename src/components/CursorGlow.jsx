@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
 
-// Soft cherry-red glow that follows the mouse.
+// Cards that get a spotlight following the mouse (see `.spotlight` styles in CSS)
+const CARD_SELECTOR = ".stat, .skill-card, .project-card, .timeline-card, .strength-card, .contact-card";
+
+// Soft cherry-red glow that follows the mouse, plus the card spotlight position.
 // Hidden on touch screens and for people who prefer reduced motion (see CSS).
 export default function CursorGlow() {
   const glowRef = useRef(null);
@@ -14,6 +17,13 @@ export default function CursorGlow() {
       frame = requestAnimationFrame(() => {
         glow.style.opacity = "1";
         glow.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+
+        const card = e.target instanceof Element ? e.target.closest(CARD_SELECTOR) : null;
+        if (card) {
+          const rect = card.getBoundingClientRect();
+          card.style.setProperty("--x", `${e.clientX - rect.left}px`);
+          card.style.setProperty("--y", `${e.clientY - rect.top}px`);
+        }
       });
     };
     const onLeave = () => {

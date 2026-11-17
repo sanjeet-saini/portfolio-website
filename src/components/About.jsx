@@ -6,11 +6,11 @@ export default function About() {
   return (
     <section id="about">
       <div className="container">
-        <SectionHead tag="About Me" title="Professional profile with creative energy.">
-          I am a BCA student who learns by building. I enjoy turning ideas into
-          clean, responsive interfaces and writing the JavaScript logic that
-          makes them work — from a full-stack CRM and productivity dashboards
-          to an image editor and a mood-based music player.
+        <SectionHead tag="About Me" title="A developer who learns by building.">
+          I'm a BCA student who enjoys turning ideas into clean, responsive
+          interfaces and writing the JavaScript logic that makes them work —
+          from a full-stack CRM and productivity dashboards to an image editor
+          and a mood-based music player.
         </SectionHead>
 
         <div className="stats-grid">

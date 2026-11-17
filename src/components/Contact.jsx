@@ -30,10 +30,10 @@ export default function Contact() {
           <Reveal as="article" className="contact-card large">
             <h3>Why work with me?</h3>
             <p>
-              I combine technical fundamentals with creative UI interest. I enjoy
-              making interfaces look attractive, feel smooth, and work properly.
-              I’m also committed to learning continuously and improving project
-              quality.
+              I combine solid JavaScript fundamentals with a strong interest in
+              UI design. I enjoy building interfaces that look good, feel smooth
+              and work reliably — and I keep learning to make every project
+              better than the last.
             </p>
             <Chips items={whyChips} />
           </Reveal>

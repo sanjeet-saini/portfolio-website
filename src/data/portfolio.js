@@ -88,6 +88,7 @@ export const skills = [
 export const projects = [
   {
     title: "ClientFlow CRM – Full Stack",
+    featured: true,
     image: "projectimg/clientflow.png",
     stack: ["React", "Node.js", "Express", "SQLite", "React Router"],
     text: "A full-stack CRM for managing customers, a sales pipeline and follow-up tasks, with a REST API, a SQLite database and automated tests.",
@@ -97,6 +98,7 @@ export const projects = [
       "Live dashboard totals, 5-stage pipeline and API tests with node:test",
     ],
     link: "https://sanjeet-saini.github.io/clientflow-crm-fullstack/",
+    code: "https://github.com/sanjeet-saini/clientflow-crm-fullstack",
   },
   {
     title: "DevTracker",
@@ -109,6 +111,7 @@ export const projects = [
       "Rule-based smart insights, dark/light mode and data saved in localStorage",
     ],
     link: "https://sanjeet-saini.github.io/tracker/",
+    code: "https://github.com/sanjeet-saini/tracker",
   },
   {
     title: "Smart Portfolio Builder",
@@ -121,6 +124,7 @@ export const projects = [
       "Export to HTML, print as CV/PDF and auto-save in the browser",
     ],
     link: "https://sanjeet-saini.github.io/portfolio_builder-/",
+    code: "https://github.com/sanjeet-saini/portfolio_builder-",
   },
   {
     title: "Moodify – Music Player",
@@ -133,6 +137,7 @@ export const projects = [
       "Full player controls with GSAP-animated UI and canvas particles",
     ],
     link: "https://sanjeet-saini.github.io/moodify/",
+    code: "https://github.com/sanjeet-saini/moodify",
   },
   {
     title: "Image Editor",
@@ -145,6 +150,7 @@ export const projects = [
       "Reset all edits and save the final image via canvas",
     ],
     link: "https://sanjeet-saini.github.io/image-editor-app/",
+    code: "https://github.com/sanjeet-saini/image-editor-app",
   },
   {
     title: "Wall Color Visualizer",
@@ -157,6 +163,7 @@ export const projects = [
       "Paint individual walls, with undo and reset",
     ],
     link: "https://sanjeet-saini.github.io/wall-color-visualization/",
+    code: "https://github.com/sanjeet-saini/wall-color-visualization",
   },
 ];
 
@@ -174,6 +181,7 @@ export const aiProjects = [
       "Menu with 5 category tabs and an auto-playing reviews carousel",
     ],
     link: "https://sanjeet-saini.github.io/ember-and-oak-restaurant/",
+    code: "https://github.com/sanjeet-saini/ember-and-oak-restaurant",
   },
   {
     title: "AUREL – Animated Landing Page",
@@ -187,6 +195,7 @@ export const aiProjects = [
       "GSAP headline slider and scroll-triggered animations",
     ],
     link: "https://sanjeet-saini.github.io/animated-landing-page/",
+    code: "https://github.com/sanjeet-saini/animated-landing-page",
   },
 ];
 
