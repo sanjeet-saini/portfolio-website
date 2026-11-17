@@ -15,7 +15,7 @@ export default function Skills() {
 
         <div className="skills-grid">
           {skills.map((skill, i) => (
-            <Reveal as="article" className="skill-card" glow delay={(i % 3) * 80} key={skill.title}>
+            <Reveal as="article" className="skill-card" delay={(i % 3) * 80} key={skill.title}>
               <div className="skill-icon">{skill.icon}</div>
               <h3>{skill.title}</h3>
               <p>{skill.text}</p>

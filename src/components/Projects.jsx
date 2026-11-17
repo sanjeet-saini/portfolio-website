@@ -4,7 +4,7 @@ import { aiProjects, profile, projects } from "../data/portfolio";
 
 function ProjectCard({ project, delay }) {
   return (
-    <Reveal as="article" className="project-card" glow delay={delay}>
+    <Reveal as="article" className="project-card" delay={delay}>
       <div className="project-image">
         {project.aiAssisted && (
           <span className="ai-badge" title="Built with AI tools under my direction">

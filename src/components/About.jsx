@@ -15,7 +15,7 @@ export default function About() {
 
         <div className="stats-grid">
           {stats.map((stat, i) => (
-            <Reveal className="stat" glow delay={i * 80} key={stat.text}>
+            <Reveal className="stat" delay={i * 80} key={stat.text}>
               <h3>{stat.label}</h3>
               <p>{stat.text}</p>
             </Reveal>

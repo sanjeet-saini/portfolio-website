@@ -27,7 +27,7 @@ export default function Contact() {
         </SectionHead>
 
         <div className="contact-grid">
-          <Reveal as="article" className="contact-card large" glow>
+          <Reveal as="article" className="contact-card large">
             <h3>Why work with me?</h3>
             <p>
               I combine technical fundamentals with creative UI interest. I enjoy
@@ -38,7 +38,7 @@ export default function Contact() {
             <Chips items={whyChips} />
           </Reveal>
 
-          <Reveal as="article" className="contact-card" glow delay={100}>
+          <Reveal as="article" className="contact-card" delay={100}>
             <h3>Get in touch</h3>
             <div className="contact-list">
               <div className="contact-item">
