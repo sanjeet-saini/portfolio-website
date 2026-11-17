@@ -2,7 +2,6 @@
 
 export const profile = {
   name: "Sanjeet Saini",
-  initials: "SS",
   role: "Frontend Developer",
   email: "sanjeetsaini91@gmail.com",
   phone: "+91-9306949154",
@@ -13,6 +12,7 @@ export const profile = {
   linkedinUrl: "https://www.linkedin.com/in/sanjeet-saini-880b1827a",
   location: "Bahadurgarh, Haryana",
   photo: "profilepic.jpeg",
+  logo: "logo.webp",
   // Rebuild with `npm run resume` after editing resume/resume.html
   resume: "Sanjeet-Saini-Resume.pdf",
 };
@@ -226,7 +226,7 @@ export const timeline = [
 export const strengths = [
   { icon: "🚀", title: "Ships Working Projects", text: "I take ideas all the way to a deployed, usable app — not just a design or half-finished code." },
   { icon: "🧩", title: "Problem Solving", text: "Comfortable breaking a feature into steps and writing the JavaScript logic for it myself." },
-  { icon: "🔁", title: "Learns by Building", text: "I pick up new tools like React, Tailwind and GSAP by using them in real practice projects." },
+  { icon: "🔁", title: "Learns by Building", text: "I pick up new tools like React, Tailwind and GSAP by using them in real projects." },
   { icon: "✨", title: "Eye for UI", text: "I care about spacing, motion and responsiveness so interfaces feel polished on every screen." },
 ];
 

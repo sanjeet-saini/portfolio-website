@@ -93,15 +93,16 @@ nav {
   text-decoration: none;
 }
 
-.logo-badge {
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  border-radius: 12px;
-  background: var(--accent);
-  color: var(--on-accent);
-  letter-spacing: 0;
+.logo-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-img {
+  transform: rotate(-8deg) scale(1.05);
 }
 
 .nav-links {
@@ -782,6 +783,35 @@ a.mini-card:hover {
 
 .back-to-top:hover {
   background: var(--accent-hover);
+}
+
+/* ---------- Cursor glow ---------- */
+.cursor-glow {
+  position: fixed;
+  top: -130px;
+  left: -130px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(circle, rgba(200, 16, 46, 0.16), transparent 65%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  will-change: transform;
+}
+
+/* Keep page content above the glow (the header is already sticky with z-index 40) */
+main,
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
+@media (hover: none), (prefers-reduced-motion: reduce) {
+  .cursor-glow {
+    display: none;
+  }
 }
 
 /* ---------- Scroll reveal ---------- */

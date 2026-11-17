@@ -21,7 +21,7 @@ export default function Header() {
       <div className="container">
         <nav>
           <a href="#home" className="logo">
-            <div className="logo-badge">{profile.initials}</div>
+            <img className="logo-img" src={profile.logo} alt="" width="42" height="42" />
             <span>{profile.name}</span>
           </a>
 

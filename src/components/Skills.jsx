@@ -9,8 +9,8 @@ export default function Skills() {
       <div className="container">
         <SectionHead tag="Technical Skills" title="Tools and technologies I work with.">
           My skill set covers frontend design, JavaScript interactivity, React
-          development, responsive layout building, version control and
-          programming fundamentals.
+          development, responsive layouts, animation, version control and a
+          growing base in backend development.
         </SectionHead>
 
         <div className="skills-grid">
