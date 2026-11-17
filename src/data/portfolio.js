@@ -28,7 +28,6 @@ export const navItems = [
 
 export const heroChips = [
   `Location: ${profile.location}`,
-  "HTML | CSS | JavaScript | React | Tailwind",
   "Open for Internship",
 ];
 
