@@ -2,7 +2,7 @@ import Reveal from "./Reveal";
 import Typewriter from "./Typewriter";
 import { heroChips, miniCards, profile } from "../data/portfolio";
 
-const roles = ["Frontend Developer", "React Developer", "UI Enthusiast", "Future Full Stack Dev"];
+const roles = ["Frontend Developer", "React Developer", "JavaScript Developer", "UI Enthusiast"];
 
 export default function Hero() {
   return (
@@ -18,12 +18,10 @@ export default function Hero() {
             I'm a <Typewriter words={roles} />
           </p>
           <p>
-            I'm {profile.name}, a BCA student from {profile.location}, focused on
-            frontend development and currently learning backend development. I
-            build responsive, interactive user interfaces with HTML, CSS,
-            JavaScript and React.js, while developing basic knowledge of
-            Node.js, Express.js and MongoDB. My goal is to grow into a Full
-            Stack Developer through consistent learning and practical projects.
+            I'm {profile.name}, a BCA final-year student and frontend developer
+            from {profile.location}. I build responsive, interactive web apps
+            with HTML, CSS, JavaScript and React — all of them live on GitHub
+            Pages. I'm looking for a frontend developer internship.
           </p>
 
           <div className="hero-actions">

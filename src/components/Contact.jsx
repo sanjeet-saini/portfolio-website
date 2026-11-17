@@ -21,10 +21,9 @@ export default function Contact() {
     <section id="contact">
       <div className="container">
         <SectionHead tag="Contact" title="Let’s build something great together.">
-          I’m strengthening my frontend skills while learning backend
-          development with Node.js, Express.js and MongoDB. I’m looking for an
-          internship or entry-level opportunity where I can contribute, learn
-          from experienced developers and grow professionally.
+          I’m looking for a frontend internship or entry-level opportunity
+          where I can contribute to real products, learn from experienced
+          developers and grow professionally.
         </SectionHead>
 
         <div className="contact-grid">
@@ -54,6 +53,18 @@ export default function Contact() {
               <div className="contact-item">
                 <small>Phone</small>
                 <a href={profile.phoneHref}>{profile.phone}</a>
+              </div>
+              <div className="contact-item">
+                <small>LinkedIn</small>
+                <a href={profile.linkedinUrl} target="_blank" rel="noreferrer">
+                  {profile.linkedin}
+                </a>
+              </div>
+              <div className="contact-item">
+                <small>GitHub</small>
+                <a href={profile.githubUrl} target="_blank" rel="noreferrer">
+                  {profile.github}
+                </a>
               </div>
               <div className="contact-item">
                 <small>Location</small>
