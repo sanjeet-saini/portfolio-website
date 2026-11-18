@@ -51,10 +51,6 @@ export default function Contact() {
                 </div>
               </div>
               <div className="contact-item">
-                <small>Phone</small>
-                <a href={profile.phoneHref}>{profile.phone}</a>
-              </div>
-              <div className="contact-item">
                 <small>LinkedIn</small>
                 <a href={profile.linkedinUrl} target="_blank" rel="noreferrer">
                   {profile.linkedin}

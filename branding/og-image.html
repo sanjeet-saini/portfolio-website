@@ -1,0 +1,108 @@
+<!doctype html>
+<!--
+  Link preview image (shown on WhatsApp, LinkedIn, X, Slack...).
+  Rebuild with: npm run og   ->  public/og-image.png (1200x630)
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+      }
+      body {
+        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+        background: #000000;
+        color: #f4f4f5;
+        display: flex;
+        align-items: center;
+        gap: 64px;
+        padding: 0 88px;
+        position: relative;
+      }
+      body::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 10px;
+        background: #c8102e;
+      }
+      .glow {
+        position: absolute;
+        right: -120px;
+        top: -160px;
+        width: 620px;
+        height: 620px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(200, 16, 46, 0.22), transparent 65%);
+      }
+      img {
+        width: 300px;
+        height: 300px;
+        flex: none;
+        position: relative;
+      }
+      .text {
+        position: relative;
+      }
+      .tag {
+        display: inline-block;
+        padding: 8px 18px;
+        border: 2px solid rgba(200, 16, 46, 0.6);
+        border-radius: 999px;
+        color: #f0455e;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 26px;
+      }
+      h1 {
+        font-size: 82px;
+        line-height: 1;
+        letter-spacing: -2px;
+        margin-bottom: 18px;
+      }
+      h2 {
+        font-size: 38px;
+        font-weight: 600;
+        color: #c4c6ca;
+        margin-bottom: 30px;
+      }
+      h2 span {
+        color: #f0455e;
+      }
+      .stack {
+        font-size: 26px;
+        color: #8a8d93;
+        margin-bottom: 30px;
+      }
+      .url {
+        font-size: 26px;
+        font-weight: 600;
+        color: #f4f4f5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="glow"></div>
+    <img src="logo-source.png" alt="" />
+    <div class="text">
+      <span class="tag">Open for Internship</span>
+      <h1>Sanjeet Saini</h1>
+      <h2>Frontend Developer <span>·</span> React.js</h2>
+      <p class="stack">JavaScript · React · Node.js · Tailwind CSS · GSAP</p>
+      <p class="url">sanjeet-saini.github.io/portfolio-website</p>
+    </div>
+  </body>
+</html>

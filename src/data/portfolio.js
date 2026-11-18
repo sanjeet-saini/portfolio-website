@@ -4,8 +4,6 @@ export const profile = {
   name: "Sanjeet Saini",
   role: "Frontend Developer",
   email: "sanjeetsaini91@gmail.com",
-  phone: "+91-9306949154",
-  phoneHref: "tel:+919306949154",
   github: "github.com/sanjeet-saini",
   githubUrl: "https://github.com/sanjeet-saini",
   linkedin: "linkedin.com/in/sanjeet-saini-880b1827a",
@@ -33,7 +31,7 @@ export const heroChips = [
 
 export const miniCards = [
   { icon: "@", title: "Email", value: profile.email, href: `mailto:${profile.email}` },
-  { icon: "☎", title: "Phone", value: profile.phone, href: profile.phoneHref },
+  { icon: "in", title: "LinkedIn", value: profile.linkedin, href: profile.linkedinUrl },
   { icon: "{ }", title: "GitHub", value: profile.github, href: profile.githubUrl },
   { icon: "◎", title: "Goal", value: "Frontend Developer Internship" },
 ];
