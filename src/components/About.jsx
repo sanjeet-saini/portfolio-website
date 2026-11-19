@@ -1,6 +1,8 @@
 import Reveal from "./Reveal";
 import SectionHead from "./SectionHead";
 import { stats } from "../data/portfolio";
+import { EXPERIMENTS } from "../experiments/config";
+import TerminalAbout from "../experiments/TerminalAbout";
 
 export default function About() {
   return (
@@ -21,6 +23,8 @@ export default function About() {
             </Reveal>
           ))}
         </div>
+
+        {EXPERIMENTS.terminal && <TerminalAbout />}
       </div>
     </section>
   );
